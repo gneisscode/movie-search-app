@@ -6,15 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
-    <title>Movie Search</title>
+    <title>Reel Movies</title>
 </head>
 <body>
-    <label for="search">Movie Search</label>
-    <input type="text" id="search" placeholder="Star Wars"/>
-    <button id="get_movie">Search</button>
-    <div id="app">
+    <div class="wrapper">
+        <!-- Logo -->
+        <div class="logo">
+            <div class="container">
+                <img src="/reshot-icon-theatre-mask-58UVRHCBQZ.svg" alt="logo" class="logo-image"><p>Reel Movies</p>
+            </div>
+        </div>
 
+        <!-- Search Container -->
+        <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie: </h3>
+                <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search Movie Title..."
+                    id="movie-search-box"
+                    onkeyup="findMovies()"
+                    onclick="findMovies()"
+                />
+                <div class="search-list" id="search-list"></div>
+            </div>
+        </div>
 
+        <!-- Result container -->
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid"></div>
+            </div>
+        </div>
     </div>
+
+
 </body>
 </html>
