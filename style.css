@@ -29,7 +29,7 @@ img {
 
 .wrapper {
     min-height: 100vh;
-    background-color: var(--wine-color);
+    background-color: var(--light-dark-color);
 }
 
 .wrapper .container {
